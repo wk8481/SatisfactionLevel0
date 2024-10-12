@@ -1,0 +1,5 @@
+Performing Bayesian optimization for hyperparameter tuning...
+Best hyperparameters: OrderedDict({'poly__degree': 1, 'poly__include_bias': False})
+
+Final Evaluation on Test Set:
+AUC: 0.6267, Accuracy: 0.4252, F1 Score: 0.3108
