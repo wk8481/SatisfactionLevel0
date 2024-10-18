@@ -3,4 +3,6 @@ matplotlib
 scikit-learn
 pandas
 numpy
+graphviz
+
 scikit-optimize
