@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Workload &le; 3.5<br/>gini = 0.738<br/>samples = 1803<br/>value = [250.0, 164.0, 345.0, 742.0, 302.0]>, fillcolor="#cac9f8"] ;
+1 [label=<Stress &le; 3.5<br/>gini = 0.691<br/>samples = 1084<br/>value = [82, 95, 177, 522, 208]>, fillcolor="#b9b8f6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Workload &le; 2.5<br/>gini = 0.676<br/>samples = 990<br/>value = [55, 89, 155, 494, 197]>, fillcolor="#b6b5f5"] ;
+1 -> 2 ;
+3 [label=<gini = 0.654<br/>samples = 661<br/>value = [24.0, 54.0, 92.0, 342.0, 149.0]>, fillcolor="#b5b4f5"] ;
+2 -> 3 ;
+4 [label=<gini = 0.708<br/>samples = 329<br/>value = [31, 35, 63, 152, 48]>, fillcolor="#bebdf6"] ;
+2 -> 4 ;
+5 [label=<Workload &le; 2.5<br/>gini = 0.756<br/>samples = 94<br/>value = [27.0, 6.0, 22.0, 28.0, 11.0]>, fillcolor="#fcfcff"] ;
+1 -> 5 ;
+6 [label=<gini = 0.728<br/>samples = 62<br/>value = [12, 5, 15, 25, 5]>, fillcolor="#d6d5f9"] ;
+5 -> 6 ;
+7 [label=<gini = 0.688<br/>samples = 32<br/>value = [15, 1, 7, 3, 6]>, fillcolor="#f7d7c0"] ;
+5 -> 7 ;
+8 [label=<Stress &le; 2.5<br/>gini = 0.771<br/>samples = 719<br/>value = [168.0, 69.0, 168.0, 220.0, 94.0]>, fillcolor="#edecfd"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<SleepHours &le; -1.175<br/>gini = 0.761<br/>samples = 540<br/>value = [101.0, 55.0, 110.0, 196.0, 78.0]>, fillcolor="#d8d7fa"] ;
+8 -> 9 ;
+10 [label=<gini = 0.746<br/>samples = 55<br/>value = [22.0, 7.0, 11.0, 8.0, 7.0]>, fillcolor="#f8e0ce"] ;
+9 -> 10 ;
+11 [label=<gini = 0.75<br/>samples = 485<br/>value = [79, 48, 99, 188, 71]>, fillcolor="#d2d1f9"] ;
+9 -> 11 ;
+12 [label=<SleepHours &le; -1.48<br/>gini = 0.723<br/>samples = 179<br/>value = [67, 14, 58, 24, 16]>, fillcolor="#fdf6f0"] ;
+8 -> 12 ;
+13 [label=<gini = 0.227<br/>samples = 16<br/>value = [14, 0, 1, 0, 1]>, fillcolor="#e89253"] ;
+12 -> 13 ;
+14 [label=<gini = 0.734<br/>samples = 163<br/>value = [53, 14, 57, 24, 15]>, fillcolor="#f8fefd"] ;
+12 -> 14 ;
+}
